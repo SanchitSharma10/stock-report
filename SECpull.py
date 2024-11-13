@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
 from lime.lime_text import LimeTextExplainer
+from chunksave import ChunkAnalyzer
 import gc
 
 
@@ -113,72 +114,109 @@ class SECAnalyzer:
             return False
 
     def extract_text(self, file_path):
-        """Extract text from SEC filing"""
+        """Extract text from key narrative sections while excluding boilerplate"""
         try:
             print(f"Starting text extraction from: {file_path}")
             
-            # Read the file with error handling for different encodings
-            for encoding in ['utf-8', 'latin-1', 'ascii']:
-                try:
-                    with open(file_path, 'r', encoding=encoding) as file:
-                        content = file.read()
-                        print(f"Successfully read file with {encoding} encoding")
-                        break
-                except UnicodeDecodeError:
-                    print(f"Failed to read with {encoding} encoding, trying next...")
-                    continue
-            else:
-                print("Failed to read file with any encoding")
-                return None
-
-            # Process with BeautifulSoup
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+                
             print("Processing with BeautifulSoup...")
             soup = bs4.BeautifulSoup(content, 'html.parser')
 
-            #We also need to remove XBRL tags as I noticed it won't print the text content properly otherwise (non-narrative elements)
+            # Remove script and style elements
             for element in soup(["script", "style"]):
                 element.decompose()
             
-            # find all the text elements 
             text_elements = []
-
-            #finding the common SEC filing text containers, because I want to model to focus on these parts:
-            # List of keywords that indicate important sections
-            important_sections = [
-                "Business", "Management's Discussion", "Risk Factors",
-                "Operating Results", "Financial Condition", "Critical Accounting",
-                "Market Risk", "Controls and Procedures", "Executive Officers",
-                "Competition", "Properties", "Revenue", "Growth", "Strategy",
-                "Operations", "Customers", "Technology"
+            
+            # Define sections to specifically exclude
+            exclude_sections = [
+                "forward-looking statements",
+                "safe harbor",
+                "market value",
+                "common stock",
+                "pursuant to",
+                "form 10-k",
+                "table of contents",
+                "exhibits",
+                "signatures"
             ]
-            # Find sections with these keywords
-            for section in soup.find_all(['div', 'p', 'td', 'span']):
+            
+            # Define high-value sections and their identifying phrases
+            target_sections = {
+                "Financial Performance": [
+                    "net revenue increased",
+                    "net revenue decreased",
+                    "financial results",
+                    "operating results",
+                    "financial performance",
+                    "fiscal year"
+                ],
+                "Business Strategy": [
+                    "our strategy",
+                    "business strategy",
+                    "competitive advantage",
+                    "growth strategy",
+                    "market opportunity"
+                ],
+                "Risk Analysis": [
+                    "primary risks",
+                    "key challenges",
+                    "competitive pressures",
+                    "market conditions",
+                    "regulatory environment"
+                ],
+                "Operations": [
+                    "daily active users",
+                    "platform engagement",
+                    "user metrics",
+                    "engagement metrics",
+                    "developer community"
+                ]
+            }
+            
+            # Process each paragraph
+            for section in soup.find_all(['div', 'p']):
                 text = section.get_text().strip()
                 
-                # Skip short texts and obvious headers/metadata
-                if len(text) < 100:
-                    continue
-                    
-                # Skip if contains XBRL or form metadata
-                if any(marker in text.lower() for marker in [
-                    'gaap:', 'xbrl:', 'cik', 'xmlns:', '☐', '☒',
-                    'check mark', 'indicate by', 'form', 'pursuant to'
-                ]):
+                # Skip if too short or contains excluded content
+                if len(text) < 200 or any(exclude in text.lower() for exclude in exclude_sections):
                     continue
                 
-                # Check if this section contains important content
-                if any(keyword.lower() in text.lower() for keyword in important_sections):
-                    # Clean up the text
-                    cleaned_text = ' '.join(text.split())
-                    if len(cleaned_text.split()) > 20:  # Only keep substantial paragraphs
-                        text_elements.append(cleaned_text)
+                # Check if text contains any target phrases
+                for section_type, phrases in target_sections.items():
+                    if any(phrase.lower() in text.lower() for phrase in phrases):
+                        # Clean the text
+                        cleaned_text = ' '.join(text.split())
+                        if len(cleaned_text.split()) > 30:  # Ensure substantial content
+                            print(f"Found {section_type} section")
+                            text_elements.append(cleaned_text)
+                        break
+            
+            # Additional check for MD&A section
+            mda_markers = soup.find_all(string=lambda text: text and "Management's Discussion and Analysis" in text)
+            if mda_markers:
+                for marker in mda_markers:
+                    current = marker.find_parent().find_next_sibling()
+                    while current and len(text_elements) < 20:  # Limit to prevent over-collection
+                        if current.name in ['p', 'div']:
+                            text = current.get_text().strip()
+                            if len(text) > 200 and not any(exclude in text.lower() for exclude in exclude_sections):
+                                cleaned_text = ' '.join(text.split())
+                                if len(cleaned_text.split()) > 30:
+                                    print("Found MD&A section")
+                                    text_elements.append(cleaned_text)
+                        current = current.find_next_sibling()
             
             full_text = ' '.join(text_elements)
             
             print(f"Extracted {len(full_text)} characters of meaningful text")
+            print(f"Found {len(text_elements)} relevant sections")
+            
             if full_text:
-                print("\nSample of extracted text:")
-                print(full_text[:500] + "...\n")
+                print("\nSample of extracted text (first section):")
+                print(text_elements[0][:500] + "...\n")
             else:
                 print("No meaningful text extracted")
                 
@@ -189,6 +227,8 @@ class SECAnalyzer:
             import traceback
             traceback.print_exc()
             return None
+
+
 
             
     def explain_sentiment(self, text_chunk):
@@ -280,57 +320,96 @@ class SECAnalyzer:
         
         return np.array(all_probs)
 
-    def analyze_sentiment(self, text, chunk_size=512):
-        """Analyze sentiment of text using FinBERT"""
+    def analyze_sentiment(self, text, chunk_size=1024):  # Increased from 512
+        """Analyze sentiment with better context preservation"""
         try:
             print(f"Analyzing sentiment of {len(text)} characters of text")
             
-            # Split text into chunks
-            chunks = [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
+            # Split into sentences first
+            sentences = [s.strip() for s in text.split('.') if s.strip()]
+            
+            # Combine sentences into chunks while preserving context
+            chunks = []
+            current_chunk = []
+            current_length = 0
+            
+            for sentence in sentences:
+                # Add sentence length plus space
+                sentence_length = len(sentence) + 1
+                
+                if current_length + sentence_length > chunk_size:
+                    # If this chunk is getting full, save it
+                    if current_chunk:
+                        chunks.append('. '.join(current_chunk) + '.')
+                    current_chunk = [sentence]
+                    current_length = sentence_length
+                else:
+                    current_chunk.append(sentence)
+                    current_length += sentence_length
+            
+            # Add the last chunk if it exists
+            if current_chunk:
+                chunks.append('. '.join(current_chunk) + '.')
+            
             sentiments = []
             explanations = []
             
+            print(f"Processing {len(chunks)} chunks...")
+            
             for i, chunk in enumerate(chunks):
-                if i % 10 == 0:
+                if i % 5 == 0:  # Print progress less frequently
                     print(f"Processing chunk {i+1}/{len(chunks)}")
                 
-                try:
-                    # Get sentiment for single chunk
-                    chunk_sentiment = self.predict_proba([chunk])[0]
-                    sentiments.append(chunk_sentiment)
+                # Skip chunks that are mostly numbers or technical markers
+                if sum(c.isdigit() for c in chunk) / len(chunk) > 0.2:
+                    continue
                     
-                    # Only get LIME explanation for high confidence chunks
-                    max_prob = max(chunk_sentiment)
-                    if max_prob > 0.7 and len(explanations) < 10:  # Limit explanations to 10
-                        # Use LIME with reduced complexity
+                try:
+                    # Get sentiment for chunk
+                    inputs = self.tokenizer(
+                        chunk,
+                        return_tensors="pt",
+                        truncation=True,
+                        max_length=512,
+                        padding=True
+                    )
+                    inputs = {k: v.to(self.device) for k, v in inputs.items()}
+                    
+                    with torch.no_grad():
+                        outputs = self.model(**inputs)
+                        probabilities = torch.nn.functional.softmax(outputs.logits, dim=-1)
+                        sentiment = probabilities[0].cpu().numpy()
+                        sentiments.append(sentiment)
+                    
+                    # Only get LIME explanation for significant chunks
+                    if max(sentiment) > 0.6 and len(explanations) < 10:
                         exp = self.explainer.explain_instance(
                             chunk,
                             self.predict_proba,
-                            num_features=5,  # Reduced features
-                            num_samples=50   # Significantly reduced samples
+                            num_features=8,  # Increased from 5
+                            num_samples=50
                         )
                         
-                        # Extract important words
                         word_importance = exp.as_list()
                         explanations.append({
-                            'text': chunk[:100] + "...",  # Just store the start
+                            'text': chunk,  # Store full chunk for context
                             'important_words': [
                                 {'word': word, 'score': score}
                                 for word, score in word_importance
                             ]
                         })
                         
-                        # Clear LIME explanation from memory
                         del exp
                         
+                    # Clear memory
+                    del inputs, outputs, probabilities
+                    if self.device.type == 'cuda':
+                        torch.cuda.empty_cache()
+                    gc.collect()
+                    
                 except Exception as e:
-                    print(f"Error processing chunk {i}: {e}")
+                    print(f"Error processing chunk: {e}")
                     continue
-                
-                # Clear memory after each chunk
-                if self.device.type == 'cuda':
-                    torch.cuda.empty_cache()
-                gc.collect()
             
             # Calculate average sentiment
             if sentiments:
@@ -342,11 +421,13 @@ class SECAnalyzer:
                 
                 return {
                     "sentiment_scores": avg_sentiment,
-                    "explanations": explanations
+                    "explanations": explanations,
+                    "all_chunks": chunks,           # Added this
+                    "all_sentiments": sentiments    # Added this
                 }
             else:
                 return None
-            
+                
         except Exception as e:
             print(f"Error in analyze_sentiment: {str(e)}")
             return None
@@ -435,6 +516,8 @@ if __name__ == "__main__":
             print("Important words:")
             for word_info in exp['important_words']:
                 print(f"  {word_info['word']}: {word_info['score']:.4f}")
+        output_file = ChunkAnalyzer.save_chunks(result)
+        print(f"\nFull analysis saved to: {output_file}")
 
 
         print(f"File analyzed: {result['file_path']}")

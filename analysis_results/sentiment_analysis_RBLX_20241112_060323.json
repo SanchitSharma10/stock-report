@@ -1,0 +1,31 @@
+{
+  "chunk_level": {
+    "predictions": [
+      -0.0028802270931892484,
+      0.05080971018046665,
+      0.02084569605704516,
+      0.13233024403309315,
+      0.15579958789553888,
+      0.18480347241816408,
+      0.18894696398811012,
+      0.2922322086693836,
+      0.16632818689943693,
+      0.07297900970577637
+    ],
+    "validation": {
+      "correlation": -0.4149380062298992,
+      "mean_difference": 1.0267539511264496,
+      "agreement_rate": 0.1,
+      "confidence_weighted_agreement": 0.07692307692307691,
+      "interpretation": "Weak agreement with human annotations | Low agreement rate"
+    }
+  },
+  "overall": {
+    "sentiment_scores": {
+      "positive": 0.4029710681902038,
+      "negative": 0.07790855063056504,
+      "neutral": 0.519120381317205
+    },
+    "timestamp": "2024-11-12T06:03:23.775687"
+  }
+}

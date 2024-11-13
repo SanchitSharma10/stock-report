@@ -1,0 +1,917 @@
+{
+  "ticker": "RBLX",
+  "filing_type": "10-K",
+  "analysis_date": "2024-11-01T00:16:00.324948",
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "text": "\u2022our expectations regarding future financial performance, including but not limited to our expectations regarding revenue, cost of revenue, changes in estimated paying user life, operating expenses, operating losses, operating leverage and our key metrics, and our ability to achieve and maintain future profitability; \u2022our ability to successfully execute our business and growth strategy, including our potential to scale and grow our advertising business, our international users, developers, and creators, and our ability to create new revenue opportunities; We manage our business by tracking several operating metrics, including average daily active users (\u201cDAUs\u201d), hours engaged, bookings, average bookings per DAU (\u201cABPDAU\u201d), average new and returning monthly unique payers, monthly repurchase rate, and average bookings per monthly unique payer. As a management team, we believe each of these operating metrics provides useful information to investors and others.",
+      "sentiment": [
+        0.23962700366973877,
+        0.011245415546000004,
+        0.7491276264190674
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "hours",
+          "score": 0.0009005800233778676
+        },
+        {
+          "word": "unique",
+          "score": 0.0008684947053582118
+        },
+        {
+          "word": "maintain",
+          "score": -0.00036390616730531294
+        },
+        {
+          "word": "payer",
+          "score": 0.00036063808555757685
+        },
+        {
+          "word": "opportunities",
+          "score": 0.0002914365971519406
+        },
+        {
+          "word": "grow",
+          "score": 0.00020107540044567385
+        },
+        {
+          "word": "each",
+          "score": -0.00019010117162535323
+        },
+        {
+          "word": "life",
+          "score": 9.843754399095762e-05
+        }
+      ]
+    },
+    {
+      "chunk_id": 1,
+      "text": "For information concerning these metrics as measured by us, see \u201cManagement\u2019s Discussion and Analysis of Financial Condition and Results of Operations. \u201d We believe that these metrics are reasonable estimates of our user base for the applicable period of measurement, and that the methodologies we employ and update from time-to-time to create these metrics are reasonable bases to identify trends in user behavior. Because we update the methodologies we employ to create metrics, our current period metrics may not be comparable to those in prior periods. For example, in the first quarter of 2023, we revised the methodology we use to calculate average monthly unique payers for payers who purchased prepaid cards through one of our specified distributors (the impact to average new and returning monthly unique payers and average bookings per monthly unique payer in periods prior to the first quarter of 2023 was not significant).",
+      "sentiment": [
+        0.10296833515167236,
+        0.048371680080890656,
+        0.8486600518226624
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "measured",
+          "score": 0.0094911600738468
+        },
+        {
+          "word": "employ",
+          "score": 0.007632147037459911
+        },
+        {
+          "word": "metrics",
+          "score": -0.006068897865431507
+        },
+        {
+          "word": "as",
+          "score": 0.0055781041644463805
+        },
+        {
+          "word": "per",
+          "score": -0.005285835561816855
+        },
+        {
+          "word": "not",
+          "score": 0.0049773189015429615
+        },
+        {
+          "word": "who",
+          "score": 0.004406097774700696
+        },
+        {
+          "word": "Financial",
+          "score": 0.004229874403912445
+        }
+      ]
+    },
+    {
+      "chunk_id": 2,
+      "text": "Finally, the accuracy of our metrics may be affected by certain factors relating to user activity and systems and our ability to identify and detect attempts to replicate legitimate user activity, often referred to as botting. See the section titled \u201cRisk Factors\u2014Our user metrics and other estimates are subject to inherent challenges in measurement, and real or perceived inaccuracies in those metrics may significantly harm and negatively affect our reputation and our business. \u201d Because DAUs measure account activity and an individual user may actively use our platform within a particular day on multiple accounts for which that individual registered, our DAUs are not a measure of unique individuals accessing Roblox. Additionally, if undetected, fraud and unauthorized access to our platform may contribute, from time to time, to an overstatement of DAUs.",
+      "sentiment": [
+        0.020372165367007256,
+        0.6392579078674316,
+        0.3403699994087219
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "may",
+          "score": 0.1846187688615213
+        },
+        {
+          "word": "accessing",
+          "score": 0.1425751947852112
+        },
+        {
+          "word": "harm",
+          "score": 0.11807352149371543
+        },
+        {
+          "word": "Because",
+          "score": 0.10165941624209131
+        },
+        {
+          "word": "Additionally",
+          "score": 0.05868895300487885
+        },
+        {
+          "word": "fraud",
+          "score": 0.0415639105700176
+        },
+        {
+          "word": "DAUs",
+          "score": -0.018129015611590017
+        },
+        {
+          "word": "section",
+          "score": 0.01808457580418362
+        }
+      ]
+    },
+    {
+      "chunk_id": 3,
+      "text": "In many cases, fraudulent accounts are created by bots to inflate user activity for a particular developer\u2019s content on our platform, thus making the developer\u2019s experience or other content appear more popular than it really is. We strive to detect and minimize fraud and unauthorized access to our platform. See the sections titled \u201cRisk Factors\u2014Our user metrics and other estimates are subject to inherent challenges in measurement, and real or perceived inaccuracies in those metrics may significantly harm and negatively affect our reputation and our business,\u201d and \u201cRisk Factors\u2014Some developers, creators, and users on our Platform may make unauthorized, fraudulent, or illegal use of Robux and other digital goods or experiences on our Platform, including through unauthorized third-party websites or \u201ccheating\u201d programs.",
+      "sentiment": [
+        0.020716426894068718,
+        0.5874487161636353,
+        0.39183488488197327
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 4,
+      "text": "\u201d We define hours engaged as the time spent by our users on the platform, which includes time spent in experiences (which refer to the titles that have been created by developers) and within platform features such as chat and avatar personalization. We calculate total hours engaged as the aggregate of user session lengths in a given period. We determine this length of time using internal company systems that track user activity on our platform, and aggregate discrete activities into a user session. We track hours engaged as an indicator of the user engagement on our platform. Hours engaged are also broken out by geographic region to help us understand the global engagement on our platform. See the sections titled \u201cRisk Factors\u2014Our user metrics and other estimates are subject to inherent challenges in measurement, and real or perceived inaccuracies in those metrics may significantly harm and negatively affect our reputation and our business.",
+      "sentiment": [
+        0.02387971617281437,
+        0.15333227813243866,
+        0.8227880597114563
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "a",
+          "score": 0.13344525642569774
+        },
+        {
+          "word": "the",
+          "score": -0.1304458967416133
+        },
+        {
+          "word": "Risk",
+          "score": -0.11248523920697644
+        },
+        {
+          "word": "broken",
+          "score": -0.08799614193213669
+        },
+        {
+          "word": "may",
+          "score": 0.08737498472017696
+        },
+        {
+          "word": "using",
+          "score": 0.06317507351029855
+        },
+        {
+          "word": "Factors",
+          "score": 0.05940164530184116
+        },
+        {
+          "word": "session",
+          "score": -0.035443010140927836
+        }
+      ]
+    },
+    {
+      "chunk_id": 5,
+      "text": "\u201d We believe bookings provide a timelier indication of trends in our operating results that are not necessarily reflected in our revenue as a result of the fact that we recognize the majority of revenue over the estimated average lifetime of a paying user, which was 28 months as of December 31, 2023. The change in deferred revenue constitutes the vast majority of the reconciling difference from revenue to bookings. By removing these non-cash adjustments, we are able to measure and monitor our business performance based on the timing of actual transactions with our users and the cash that is generated from these transactions. Over the long-term, the factors impacting our revenue and bookings trends are the same. However, in the short-term, there are factors that may cause revenue and bookings trends to differ. We use this non-GAAP financial information to evaluate our ongoing operations and for internal planning and forecasting purposes.",
+      "sentiment": [
+        0.06445886939764023,
+        0.04921684414148331,
+        0.8863242864608765
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "differ",
+          "score": 0.018381948780067575
+        },
+        {
+          "word": "of",
+          "score": 0.00929811153877438
+        },
+        {
+          "word": "this",
+          "score": -0.008765492017971407
+        },
+        {
+          "word": "timelier",
+          "score": 0.007868364032875145
+        },
+        {
+          "word": "GAAP",
+          "score": -0.0054315487254329485
+        },
+        {
+          "word": "lifetime",
+          "score": 0.0038986986187190607
+        },
+        {
+          "word": "performance",
+          "score": 0.0016662551207043594
+        },
+        {
+          "word": "2023",
+          "score": -0.0005714456914797725
+        }
+      ]
+    },
+    {
+      "chunk_id": 6,
+      "text": "We believe that this non-GAAP financial information may be helpful to investors because it provides consistency and comparability with past financial performance. However, non-GAAP financial measures have limitations in their usefulness to investors because they have no standardized meaning prescribed by GAAP and are not prepared under any comprehensive set of accounting rules or principles. In addition, other companies, including companies in our industry, may calculate similarly titled non-GAAP financial measures differently or may use other measures to evaluate their performance, all of which could reduce the usefulness of our non-GAAP financial information as a tool for comparison. As a result, our non-GAAP financial information is presented for supplemental informational purposes only and should not be considered in isolation from, or as a substitute for financial information presented in accordance with GAAP. Creators can share their work with other creators through the Creator Store.",
+      "sentiment": [
+        0.025476617738604546,
+        0.3774780333042145,
+        0.597045361995697
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 7,
+      "text": "The Creator Store drives collaboration within our developer community, accelerates creation of new experiences, and provides additional ways for creators to monetize their work. As of December 31, 2023, the Creator Store contained millions of models, meshes, textures, scripts, audio clips, developer tools, and packaged combinations of these items. To meet an evolving global regulatory environment, the Roblox Client can adjust a user\u2019s experience and available content based on their age, device type, current location and where the client application was obtained. This allows Roblox to dynamically apply relevant content filters, anti-addiction rules, payment limits, and parental consent requirements. We are subject to a number of U. S. federal and state and foreign laws and regulations that involve matters central to our business.",
+      "sentiment": [
+        0.05070330202579498,
+        0.015390513464808464,
+        0.9339061975479126
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "to",
+          "score": -0.005513076182855251
+        },
+        {
+          "word": "relevant",
+          "score": -0.003346874761090125
+        },
+        {
+          "word": "limits",
+          "score": 0.0025430290183005196
+        },
+        {
+          "word": "This",
+          "score": 0.002168286360741575
+        },
+        {
+          "word": "matters",
+          "score": 0.0012863531866262154
+        },
+        {
+          "word": "experience",
+          "score": -0.0012542644726439948
+        },
+        {
+          "word": "payment",
+          "score": -0.0008827322062816346
+        },
+        {
+          "word": "filters",
+          "score": -0.00041836268446806423
+        }
+      ]
+    },
+    {
+      "chunk_id": 8,
+      "text": "These laws and regulations may involve privacy, data protection, security, rights of publicity, content regulation, intellectual property, gambling, loot boxes, ratings, competition, protection of minors, including verified parental consent, consumer protection, communication, credit card processing, taxation, anti-bribery, anti-money laundering and corruption, economic or other trade prohibitions or sanctions or securities law compliance or other subjects. Many of these laws and regulations are still evolving and being tested in courts and could be interpreted and applied in a manner that is inconsistent from country to country or state to state and inconsistent with our current policies and practices and in ways that could harm our business. In addition, the application and interpretation of these laws and regulations often are uncertain, particularly in the new and rapidly evolving industry in which we operate.",
+      "sentiment": [
+        0.02293182909488678,
+        0.46967652440071106,
+        0.5073916912078857
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 9,
+      "text": "The costs of complying with these laws and regulations are high and likely to increase in the future, particularly as the degree of regulation increases, our business grows and our geographic scope expands. Further, the impact of these laws and regulations may disproportionately affect our business in comparison to our peers in the technology sector that have greater resources. Any failure on our part to comply with these laws and regulations may subject us to significant liabilities or penalties, or otherwise adversely affect our business, financial condition or operating results. It is imperative that we secure the creative assets, performance and user data that are critical to our business. We devote considerable resources to our security program with the intent to continually improve our services and how we securely store and separate user assets. Our intent is to make it easy for our developers and creators to securely build and distribute their content on our Platform.",
+      "sentiment": [
+        0.1251886785030365,
+        0.06554464250802994,
+        0.8092666268348694
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "affect",
+          "score": 0.017755181988848623
+        },
+        {
+          "word": "for",
+          "score": 0.01324681120760045
+        },
+        {
+          "word": "store",
+          "score": 0.011306706022622346
+        },
+        {
+          "word": "disproportionately",
+          "score": 0.010458735143588927
+        },
+        {
+          "word": "imperative",
+          "score": -0.00913133794619739
+        },
+        {
+          "word": "may",
+          "score": 0.004508357160698711
+        },
+        {
+          "word": "securely",
+          "score": 0.0022817040967178636
+        },
+        {
+          "word": "the",
+          "score": 0.001444364989790219
+        }
+      ]
+    },
+    {
+      "chunk_id": 10,
+      "text": "We rely on a variety of statutory and common-law frameworks and defenses relevant to the content available on our service, including the Digital Millennium Copyright Act (\u201cDMCA\u201d), the Communications Decency Act, and the fair-use doctrine in the U. S. , and the Electronic Commerce Directive in the European Union (\u201cEU\u201d). However, each of these statutes is subject to uncertain or evolving judicial interpretation and regulatory and legislative amendments. In addition, pending or recently adopted legislation in the EU may impose additional obligations or liability on us associated with content uploaded by users to our Platform. If the rules, doctrines or currently available defenses change, if international jurisdictions refuse to apply protections similar to those that are currently available in the U. S.",
+      "sentiment": [
+        0.029821747913956642,
+        0.29594117403030396,
+        0.674237072467804
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "doctrines",
+          "score": 0.08784543525906525
+        },
+        {
+          "word": "liability",
+          "score": 0.07579600309473189
+        },
+        {
+          "word": "addition",
+          "score": 0.04306829977980394
+        },
+        {
+          "word": "similar",
+          "score": -0.028110409833076756
+        },
+        {
+          "word": "law",
+          "score": 0.026643507477466313
+        },
+        {
+          "word": "or",
+          "score": 0.007662597564264713
+        },
+        {
+          "word": "a",
+          "score": 0.006981918019625103
+        },
+        {
+          "word": "in",
+          "score": -0.0015155717878097223
+        }
+      ]
+    },
+    {
+      "chunk_id": 11,
+      "text": "or the EU, or if a court were to disagree with our application of those rules to our service, we could be required to expend significant resources to try to comply with the new rules or incur liability, and our business, revenue and financial results could be harmed. Children\u2019s privacy has also been a focus of recent enforcement activity and subjects our business to potential liability that could adversely affect our business, financial condition or operating results. The Federal Trade Commission and state attorneys general in the U. S. have in recent years increased enforcement of COPPA, which requires companies to obtain parental consent before collecting personal information from children under the age of 13. In addition, the FTC released proposed updates to COPPA and are requesting comments prior to publishing a final version of the updated COPPA rule. In addition, GDPR prohibits certain processing of personal information of children under the age of 13-16 (depending on the country) without parental consent.",
+      "sentiment": [
+        0.046102650463581085,
+        0.4034232795238495,
+        0.5504740476608276
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 12,
+      "text": "The CCPA requires companies to obtain the consent of children in California under the age of 16 (or parental consent for children under the age of 13) before selling their personal information. Actual or perceived noncompliance with the AADC may result in audits or other proceedings by the United Kingdom\u2019s Information Commissioner Office, the body set up to uphold information rights in the United Kingdom, and other regulators in the EEA or Switzerland, as noncompliance with the AADC may indicate noncompliance with applicable data protection law. Although we take reasonable efforts to comply with these laws and regulations, we may in the future face claims under COPPA, the GDPR, the CCPA, the ADCA, and the AADC, or other laws or actual or asserted obligations relating to children\u2019s privacy. There are also a number of legislative proposals pending before the U. S.",
+      "sentiment": [
+        0.025933753699064255,
+        0.1962040513753891,
+        0.7778622508049011
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "pending",
+          "score": 0.046201047188529805
+        },
+        {
+          "word": "may",
+          "score": 0.042577818231323415
+        },
+        {
+          "word": "Commissioner",
+          "score": 0.0318108521780435
+        },
+        {
+          "word": "regulations",
+          "score": 0.030219768408982283
+        },
+        {
+          "word": "companies",
+          "score": 0.028704710814647684
+        },
+        {
+          "word": "AADC",
+          "score": 0.024749189808100158
+        },
+        {
+          "word": "reasonable",
+          "score": 0.0036964398384869844
+        },
+        {
+          "word": "proposals",
+          "score": -0.002677654140757411
+        }
+      ]
+    },
+    {
+      "chunk_id": 13,
+      "text": "Congress, various state legislative bodies and foreign governments concerning content regulation and data protection that could affect us if enacted in the future. \u2022Our business is affected by seasonal demands, and our financial condition and results of operations will fluctuate from quarter to quarter, which makes our financial results difficult to predict and may not fully reflect our underlying performance. \u2022Because we recognize revenue from bookings over the estimated average lifetime of a paying user or as the virtual items are consumed, changes in our business may not be immediately reflected in our operating results.",
+      "sentiment": [
+        0.02512129209935665,
+        0.7702234387397766,
+        0.20465528964996338
+      ],
+      "has_detailed_analysis": true,
+      "important_words": [
+        {
+          "word": "may",
+          "score": 0.31375690312692023
+        },
+        {
+          "word": "difficult",
+          "score": 0.1995461723899218
+        },
+        {
+          "word": "various",
+          "score": -0.1595316598531611
+        },
+        {
+          "word": "fluctuate",
+          "score": 0.15943494972585856
+        },
+        {
+          "word": "reflect",
+          "score": 0.11828079114504149
+        },
+        {
+          "word": "underlying",
+          "score": -0.08588821473571728
+        },
+        {
+          "word": "reflected",
+          "score": 0.07632413806838305
+        },
+        {
+          "word": "concerning",
+          "score": 0.00018531418923899528
+        }
+      ]
+    },
+    {
+      "chunk_id": 14,
+      "text": "\u2022If our business becomes constrained by changing legal and regulatory requirements, including with respect to privacy, cybersecurity and data protection, artificial intelligence (\u201cAI\u201d), consumer protection, communication, verified parental consent and user-generated content, or enforcement by government regulators, including fines, orders, or consent decrees in the US or other jurisdictions in which we operate, our operating results will suffer. Our business is affected by seasonal demands, and our financial condition and results of operations will fluctuate from quarter to quarter, which makes our financial results difficult to predict and may not fully reflect our underlying performance. We experienced rapid growth in prior periods relative to our quarterly forecast and historic trends, which may not be indicative of our financial and operating results in future periods. Activity levels in prior periods are not sustainable, and our growth rates have moderated in most markets.",
+      "sentiment": [
+        0.022955942898988724,
+        0.9431223273277283,
+        0.03392171859741211
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 15,
+      "text": "The long-term impact to our business, operations, and financial results will depend on numerous evolving factors that we may not be able to accurately predict. For example, our bookings increased 171% from the year ended December 31, 2019 to the year ended December 31, 2020, while our bookings increased 23% from the year ended December 31, 2022 to the year ended December 31, 2023. Our revenue, bookings, and user base growth rates have slowed and may continue to slow, and we may not experience any growth in bookings or our user base during periods where we are comparing against historical periods. We believe our overall market acceptance, revenue growth, and increases in bookings depend on a number of factors, some of which are not within our control. There can be no assurance that users will not reduce their usage or engagement with our Platform or reduce their discretionary spending on Robux, which would adversely impact our revenue and financial condition.",
+      "sentiment": [
+        0.07316835224628448,
+        0.7506009936332703,
+        0.17623062431812286
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 16,
+      "text": "If we are unable to continue to maintain the attractiveness of our Platform to developers, creators, and users, they may no longer seek new experiences in our Platform, which would result in decreased market acceptance, fewer bookings, and lower revenue and could harm our operations. Our estimates or judgments relating to our critical accounting policies could cause our results of operations to fall below expectations, and changes in our business may not be immediately reflected in our operating results. The preparation of financial statements in conformity with GAAP requires management to make estimates and assumptions that affect the amounts reported in our financial statements and accompanying notes. For example, the majority of the virtual items available on our Platform are durable virtual items, which, when acquired, are recognized ratably over the estimated period of time the virtual items are available to the user (estimated to be the average lifetime of a paying user).",
+      "sentiment": [
+        0.019136127084493637,
+        0.7453165054321289,
+        0.23554736375808716
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 17,
+      "text": "Every quarter, we complete an assessment of our estimated paying user life, which is used for revenue recognition of durable virtual items and calculated based on historical monthly retention data for each paying user cohort to project future participation on our Platform. We calculate the average historical monthly retention data by determining the weighted average of monthly paying users that have spent time on our Platform. In 2021, our estimated paying user life was 23 months. In the first quarter of 2022, we updated our estimated paying user life from 23 months to 25 months, which was subsequently updated to 28 months in the third quarter of 2022. Based on the carrying amount of deferred revenue and deferred cost of revenue as of December 31, 2021, these changes in estimates resulted in a decrease in revenue of $344. 9 million and a decrease in cost of revenue of $79. 3 million during the twelve months ended December 31, 2022.",
+      "sentiment": [
+        0.016759924590587616,
+        0.9380191564559937,
+        0.04522093012928963
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 18,
+      "text": "Much of the revenue we report in each quarter is the result of purchases of Robux during previous periods. Consequently, a decline in purchases of Robux in any one quarter will not be fully reflected in our revenue and operating results for that quarter. Any such decline, however, will negatively impact our revenue and operating results in future quarters. Accordingly, the effect of significant near-term downturns in purchases of Robux for a variety of reasons may not be fully reflected in our results of operations until future periods. We believe that maintaining, protecting, and enhancing our reputation and brand is critical to grow the number of developers, creators, and users on our Platform, especially given the safe and civil atmosphere that we strive to achieve for our users, many of whom are children. Maintaining, protecting, and enhancing our brand will depend largely on our ability to continue to provide reliable high-quality, engaging, and shared experiences on our Platform.",
+      "sentiment": [
+        0.2052045613527298,
+        0.06836026906967163,
+        0.726435124874115
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 19,
+      "text": "If users, developers, or creators do not perceive our Platform to be reliable or of high quality, the value of our brand could diminish, thereby decreasing the attractiveness of our Platform. Further, we have faced and are currently defending allegations that our Platform has been used by criminal offenders to identify and communicate with children and to possibly entice them to interact off-Platform, outside of the restrictions of our chat, content blockers, and other on-Platform safety measures. While we devote considerable resources to prevent this from occurring, we are unable to prevent all such interactions from taking place. We have also received and may continue to receive a high degree of media coverage, including the use of our Platform for illicit or objectionable ends.",
+      "sentiment": [
+        0.012348087504506111,
+        0.9422754645347595,
+        0.04537644982337952
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 20,
+      "text": "For example, we have experienced negative media publicity related to the age of some of our developers, the content that developers produce for, or the conduct of users on our Platform that may be deemed illicit, explicit, profane, or otherwise objectionable. Additional unfavorable publicity has covered our privacy, cybersecurity, or data protection practices, terms of service, product changes, product quality, litigation or regulatory activity, our use of generative AI, the actions of our users, and the actions of our developers or creators whose products are integrated with our Platform. Our reputation and brand could also be negatively affected by the actions of developers and users that are hostile, inappropriate, or illegal, whether on or off our Platform.",
+      "sentiment": [
+        0.014143232256174088,
+        0.8086833357810974,
+        0.1771734356880188
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 21,
+      "text": "Actual or perceived incidents or misuses of user data or other privacy or security incidents, the substance or enforcement of our community standards, the quality, integrity, characterization and age-appropriateness of content shared on our Platform, or the actions of other companies that provide similar services to ours, has in the past, and could in the future, adversely affect our reputation. Any criminal incidents or allegations involving Roblox, whether or not we are directly responsible, could adversely affect our reputation as a safe place for children and hurt our business. Any negative publicity could create the perception that we do not provide a safe online environment and may have an adverse effect on the size, engagement, and loyalty of our developer, creator, and user community, which would adversely affect our business and financial results. Maintaining, protecting, and enhancing our reputation and brand may require us to make substantial investments, and these investments may not be successful.",
+      "sentiment": [
+        0.018269957974553108,
+        0.7560662031173706,
+        0.2256639003753662
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 22,
+      "text": "We view DAUs as a critical measure of our user engagement, and adding, maintaining, and engaging users has been and will continue to be necessary to our continued growth. Our DAU growth rate has fluctuated in the past and may slow in the future due to various factors including: the introduction of new experiences or virtual items on our Platform, performance issues with our Platform, higher market penetration rates, the availability of our Platform across markets and user demographics, which may be impacted by regulatory or legal requirements, including the use of verified parental consent, changing responses to outbreaks of COVID-19, and competition from a variety of entertainment sources for our users and their time. In addition, our strategy seeks to expand the age groups and geographic markets that make up our users.",
+      "sentiment": [
+        0.24050043523311615,
+        0.2108326107263565,
+        0.5486670136451721
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 23,
+      "text": "If and when we achieve maximum market penetration rates among any particular user cohort overall and in particular geographic markets, future growth in DAUs will need to come from other age or geographic cohorts, which may be difficult, costly or time consuming for us to achieve. Accessibility to the internet and bandwidth or connectivity limitations as well as regulatory requirements, may also affect our ability to further expand our user base in a variety of geographies. If our DAU growth rate slows or becomes stagnant, or we have a decline in DAUs, or we fail to effectively monetize users in certain geographic markets, our financial performance will increasingly depend on our ability to elevate user activity or increase the monetization of our users. Our business plan assumes that the demand for interactive entertainment offerings will increase for the foreseeable future.",
+      "sentiment": [
+        0.05226666480302811,
+        0.7994006872177124,
+        0.14833255112171173
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 24,
+      "text": "However, if this market shrinks or grows more slowly than anticipated or if demand for our Platform does not grow as quickly as we anticipate, whether as a result of competition, product obsolescence, budgetary constraints of our developers, creators, and users, technological changes, unfavorable economic conditions, uncertain geopolitical or regulatory environments or other factors, we may not be able to increase our revenue and bookings sufficiently to ever achieve profitability and our stock price would decline. We have experienced outages from time to time since our inception when the Platform is unavailable for all or some of our users, developers, and creators, including in May 2022 and October 2021. In addition, there may be times when access to our Platform for users, developers, and creators may be temporarily unavailable or limited.",
+      "sentiment": [
+        0.03912602365016937,
+        0.8616653084754944,
+        0.09920870512723923
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 25,
+      "text": "This could be due to proactive actions we take while we provide critical updates or as an unexpected outcome of routine maintenance, which most recently occurred in July 2023. Outages can be caused by a number of factors, including a move to a new technology, the demand on our Platform exceeding the capabilities of our technological infrastructure, delays or failures resulting from natural disasters, manmade disasters, or other catastrophic events, the migration of data among data centers and to third-party hosted environments, and issues relating to our reliance on third-party software, third-party application stores, and third parties that host our Platform in areas where we do not operate our own data centers. The unavailability of our Platform, particularly if outages should become more frequent or longer in duration, could cause our users to seek other entertainment options, including those provided by our competitors, which may adversely affect our financial results.",
+      "sentiment": [
+        0.011011388152837753,
+        0.9009150266647339,
+        0.08807367086410522
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 26,
+      "text": "If we or our partners or third party service providers experience outages and our Platform is unavailable or if our developers, creators, and users are unable to access our Platform within a reasonable amount of time or at all, as a result of any such events, our reputation and brand may be harmed, developer, creator and user engagement with our Platform may be reduced, and our revenue, bookings and profitability could be negatively impacted. We may also experience a negative impact to our financial results as a result of decreased usage on our Platform or decrease of payouts to developers and creators. We may not have full redundancy for all of our systems at all times and our disaster recovery planning may not be sufficient to address all aspects of any unanticipated consequence or incident or allow us to maintain business continuity at profitable levels or at all.",
+      "sentiment": [
+        0.009136895649135113,
+        0.9528303742408752,
+        0.038032740354537964
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 27,
+      "text": "Further, in the event of damage or service interruption, our business interruption insurance policies will not adequately compensate us for any losses that we may incur. These factors in turn could further reduce our revenues, subject us to liability, or otherwise harm our business, financial condition, or results of operations. Although we maintain cyber and privacy insurance, subject to applicable deductibles and policy limits, such coverage may not extend to all types of incidents relating to privacy, data protection, or cybersecurity, and it may be insufficient to cover all costs and expenses associated with such incidents. Further, such insurance may not continue to be available to us in the future on economically reasonable terms, or at all, and insurers may deny us coverage as to any future claim.",
+      "sentiment": [
+        0.021410953253507614,
+        0.7042859792709351,
+        0.27430298924446106
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 28,
+      "text": "The successful assertion of one or more large claims against us that exceed available insurance coverage, or the occurrence of changes in our insurance policies, including premium increases or the imposition of large deductible or co-insurance requirements, could have a material adverse effect on our business, including our financial condition, operating results, and reputation. We operate our Platform throughout the world and are subject to risks and challenges associated with international business. For the year ended December 31, 2023, approximately 78% of our DAUs and 36% of our revenue was derived from outside the U. S. and Canada region. We intend to continue to expand internationally, and this expansion is a critical element of our future business strategy.",
+      "sentiment": [
+        0.14564302563667297,
+        0.0270670298486948,
+        0.8272899985313416
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 29,
+      "text": "However, as we continue to expand internationally, including into developing countries where consumer discretionary spending is relatively weak, while our DAUs increase, the growth rate of our bookings could decelerate due to weaker spending by users from those regions, and our ABPDAU has been and may continue to be negatively impacted. While we have a number of developers, creators, and users outside of the U. S. , we have limited offices located outside of the U. S. and Canada, and there is no guarantee that our international expansion efforts will be successful. The risks and challenges associated with expanding our international presence and operations include: Additionally, we may not succeed in further monetizing our Platform and user base.",
+      "sentiment": [
+        0.07727637141942978,
+        0.7353236675262451,
+        0.1873999387025833
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 30,
+      "text": "As a result, our user growth, user engagement, financial performance and ability to grow revenue could be significantly harmed if we fail to increase or maintain DAUs; our user growth outpaces our ability to monetize our users, including if our user growth occurs in markets that are not profitable; we fail to provide the tools and education to our developers and creators to enable them to monetize their experiences and developers do not create engaging or new experiences for users; we fail to establish a successful advertising model; we fail to increase or maintain the amount of time spent on our Platform, the number of experiences that our users engage with, or the usage of our technology for our developers; we fail to increase the features of our Platform, allowing it to more broadly serve the entertainment, education, communication and business markets; we fail to increase penetration and engagement across all demographics or measures intended to make our Platform more attractive to older-age verified users create the perception that our Platform is not safe for young users; or the experiences on our Platform do not maintain or gain popularity.",
+      "sentiment": [
+        0.10689885914325714,
+        0.5032106637954712,
+        0.3898904621601105
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 31,
+      "text": "We introduced our users to offerings for Robux that are subscription-based. Only a small portion of our users regularly purchase Robux compared to all users who use our Platform in any period. While we intend for these efforts to generate increased recurring revenues from our existing user base, they may cause users to decrease their purchases of Robux and decrease these users\u2019 overall spend on our Platform. Our ability to continue to attract and retain users of our paid subscription services will depend in part on our ability to consistently provide our subscribers with a quality experience. If our users do not perceive these offerings to be of value, or if we introduce new or adjust existing features or pricing in a manner that is not favorably received by them, we may not be able to attract and retain subscribers or be able to convince users to become subscribers of such additional service offerings, and we may not be able to increase the amount of recurring revenue from our user base.",
+      "sentiment": [
+        0.14794330298900604,
+        0.3894946873188019,
+        0.46256205439567566
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 32,
+      "text": "If users fail to purchase Robux at rates similar to or greater than they have historically and if we fail to attract new paying users, or if our paying users fail to continue interacting with the Platform and purchasing Robux as they increase in age, our revenue will suffer. Subscribers may cancel their subscription to our service for many reasons, including a perception that they do not use the service sufficiently, the need to reduce household expenses, competitive services that provide a better value or experience or as a result of changes in pricing. If our efforts to attract and retain subscribers are not successful, our business, operating results, and financial condition may be adversely impacted. Our user metrics and other estimates are subject to inherent challenges in measurement, and real or perceived inaccuracies in those metrics may significantly harm and negatively affect our reputation and our business.",
+      "sentiment": [
+        0.010196664370596409,
+        0.9515665173530579,
+        0.03823688253760338
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 33,
+      "text": "Additionally, there are users who have multiple accounts, fake user accounts, or fraudulent accounts created by bots to inflate user activity for a particular developer or creator on our Platform, thus making the developer\u2019s or creator\u2019s experience or other content appear more popular than it really is. We strive to detect and minimize fraud and unauthorized access to our Platform, and these practices are prohibited in our terms of service, and we implement measures to detect and suppress that behavior. If we are successful in our efforts to minimize fraud, the use of bots and unauthorized access to our Platform, our operating results may be negatively affected. Some of our demographic data may also be incomplete or inaccurate. For example, because users self-report their dates of birth, our age demographic data may differ from our users\u2019 actual ages. If our users provide us with incorrect or incomplete information regarding their age or other attributes, then our estimates may prove inaccurate.",
+      "sentiment": [
+        0.019943371415138245,
+        0.7639697194099426,
+        0.21608692407608032
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 34,
+      "text": "We have made and are continuing to make investments in privacy, data protection, user safety, cybersecurity, and content review efforts to combat misuse of our services and user data by third parties, including investigations of individuals we have determined to have attempted to access and, in some cases, have accessed, user data without authorization. Our internal teams also continually monitor and address any unauthorized attempts to access data stored on servers that we own or control or data available to our third-party customer service providers. As a result of these efforts, we have discovered and disclosed, and anticipate that we will continue to discover and disclose, additional incidents of misuse of or unauthorized access of user data or other undesirable activity by third parties.",
+      "sentiment": [
+        0.05093064904212952,
+        0.14933562278747559,
+        0.7997336983680725
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 35,
+      "text": "We have taken steps to protect the data that we have access to, but despite these efforts, our security measures, or those of our third-party service providers, could be insufficient or breached as a result of third-party action, malfeasance, employee errors, service provider errors, technological limitations, defects or vulnerabilities in our Platform or otherwise. Additionally, many of our employees and third-party service providers with access to user data currently are and may in the future be working remotely, which may increase our or our third-party service providers\u2019 risk of security breaches or incidents. Moreover, the risk of state-supported and geopolitical-related cyber-attacks may increase with recent geopolitical events. We may not discover all such incidents or activity or be able to respond to or otherwise address them, promptly, in sufficient respects or at all.",
+      "sentiment": [
+        0.016741929575800896,
+        0.900973379611969,
+        0.08228469640016556
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 36,
+      "text": "Such incidents and activities have in the past, and may in the future, involve the use of user data or our systems in a manner inconsistent with our terms, contracts or policies, the existence of false or undesirable user accounts, theft of in-game currency or virtual items in valid user accounts, and activities that threaten people\u2019s safety on- or offline. We may also be unsuccessful in our efforts to enforce our policies or otherwise remediate any such incidents. Any of the foregoing developments, whether actual or perceived, may negatively affect user trust and engagement, harm our reputation and brands, require us to change our business practices in a manner adverse to our business, and adversely affect our business and financial results.",
+      "sentiment": [
+        0.01155460998415947,
+        0.9007226824760437,
+        0.08772270381450653
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 37,
+      "text": "Any such developments may also subject us to future litigation and regulatory inquiries, investigations, and proceedings, including from data protection authorities in countries where we offer services and/or have users, which could subject us to monetary penalties and damages, divert management\u2019s time and attention, and lead to enhanced regulatory oversight. We must continue to attract and retain users, developers, and creators, and highly qualified personnel in very competitive markets to continue to execute on our business strategy and growth plans, and the loss of key personnel or failure to attract and retain users, developers, and creators could significantly harm our business. We expect competition to continue to increase in the future.",
+      "sentiment": [
+        0.01989893801510334,
+        0.9457443952560425,
+        0.034356601536273956
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 38,
+      "text": "Many of our existing competitors have, and some of our potential competitors could have, substantial competitive advantages, such as larger sales and marketing budgets and resources; broader and more established relationships with users, developers, and creators; greater resources to make acquisitions and enter into strategic partnerships; lower labor and research and development costs; larger and more mature intellectual property portfolios; and substantially greater financial, technical, and other resources. As we continue to expand our international operations, we become more exposed to the effects of fluctuations in currency exchange rates. We generally collect revenue from our international markets in the local currency. For the year ended December 31, 2023, approximately 78% our DAUs and 36% of our revenue was derived from outside the U. S. and Canada region. While we periodically adjust the price of Robux to account for the relative value of this local currency to the U. S.",
+      "sentiment": [
+        0.2598022222518921,
+        0.009917872957885265,
+        0.7302798628807068
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 39,
+      "text": "dollar, these adjustments are not immediate nor do they typically exactly track the underlying currency fluctuations. As a result, rapid appreciation of the U. S. dollar against these foreign currencies has harmed and may in the future harm our reported results and cause the revenue derived from our foreign users and overall revenue to decrease. In addition, even if we do adjust the cost of our Robux in foreign markets to fluctuations in the U. S. dollar, such fluctuations could change the costs of purchasing Robux to our users outside of the U. S. , which may adversely affect our business, results of operations and financial condition, or improve our financial performance. As part of our business strategy, we have made and intend to make acquisitions to add specialized employees and complementary companies, features, and technologies. Our ability to acquire and successfully integrate larger or more complex companies, features, and technologies is unproven.",
+      "sentiment": [
+        0.022107316181063652,
+        0.9153618216514587,
+        0.06253088265657425
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 40,
+      "text": "In the future, we may not be able to find other suitable acquisition or investment candidates, and we may not be able to complete acquisitions or similar strategic transactions on favorable terms, if at all. The pursuit of potential acquisitions may divert the attention of management and cause us to incur significant expenses related to identifying, investigating, and pursuing suitable acquisitions, whether or not they are consummated. Our previous and future acquisitions may not achieve our goals, and any future acquisitions we complete could be viewed negatively by users, developers, creators, partners, or investors. In addition, if we fail to successfully close transactions or integrate new teams into our corporate culture, or fail to integrate the features and technologies associated with these acquisitions, our business could be significantly harmed. Any integration process may require significant time and resources, and we may not be able to manage the process successfully.",
+      "sentiment": [
+        0.013342714868485928,
+        0.9062876105308533,
+        0.08036971837282181
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 41,
+      "text": "We may not successfully evaluate or use the acquired products, technology, and personnel, or accurately forecast the financial impact of an acquisition, including accounting charges which could be recognized as a current period expense. We also may not achieve the anticipated benefits of synergies from the acquired business, may encounter challenges with incorporating the acquired features and technologies into our Platform while maintaining quality and security standards consistent with our brand, or may fail to identify security vulnerabilities in acquired technology prior to integration with our technology and Platform. We may also incur unanticipated liabilities that we assume as a result of acquiring companies, including claims related to the acquired company, its offerings or technologies or potential violations of applicable law or industry rules and regulations arising from prior or ongoing acts or omissions by the acquired business that were not discovered during diligence.",
+      "sentiment": [
+        0.01990685798227787,
+        0.7145041227340698,
+        0.2655889391899109
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 42,
+      "text": "We will pay cash, incur debt, or issue equity securities to pay for any acquisitions, any of which could significantly harm our business. In addition, it generally takes several months after the closing of an acquisition to finalize the purchase price allocation. Therefore, it is possible that our valuation of an acquisition may change and result in unanticipated write-offs or charges, impairment of our goodwill, or a material change to the fair value of the assets and liabilities associated with a particular acquisition, any of which could significantly harm our business. Selling equity to finance any such acquisition would also dilute our stockholders. Incurring debt would increase our fixed obligations and could also include covenants or other restrictions that would impede our ability to manage our operations. As of December 31, 2023, we had federal net operating loss carryforwards of $2,382. 3 million, which do not expire, federal net operating loss carryforwards of $52.",
+      "sentiment": [
+        0.009450651705265045,
+        0.93719881772995,
+        0.0533505380153656
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 43,
+      "text": "2 million, which begin to expire in 2035, state net operating loss carryforwards of $1,261. 4 million, which begin to expire in 2024, and foreign net operating loss carryforwards of $66. 8 million, which begin to expire in 2024. Utilization of our net operating loss carryforwards and other tax attributes may be subject to limitations on utilization or benefit due to the ownership change limitations provided by Sections 382 and 383 of the Internal Revenue Code of 1986, as amended (the \u201cCode\u201d), and other similar provisions. All of the $2,382. 3 million of federal net operating losses are carried forward indefinitely but the deductibility of these losses is generally limited to 80% of current year taxable income. Our net operating loss carryforwards may also be subject to limitations under state law. If our net operating loss carryforwards and other tax attributes expire before utilization or are subject to limitations, our business and financial results could be harmed.",
+      "sentiment": [
+        0.026766661554574966,
+        0.37035587430000305,
+        0.6028774380683899
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 44,
+      "text": "Changes in current laws or regulations or the imposition of new laws and regulations in the U. S. or elsewhere that prohibit us from making Robux available on our Platform would require us to make significant changes to our Platform, which would materially impair our business, financial condition, and operating results. Finally, the Organization for Economic Cooperation and Development has proposed the Pillar One framework as part of the OECD/G20 Base Erosion and Profit Shifting (BEPS) Project, which would revise existing profit allocation and nexus rules to require profit allocation based on location of sales versus physical presence for certain large multinational businesses, but if implemented, could result in the removal of unilateral digital services tax initiatives described above. Any developments or changes in federal, state, or international tax laws or tax rulings could adversely affect our compliance costs, effective tax rate, and our operating results.",
+      "sentiment": [
+        0.023595331236720085,
+        0.5641955137252808,
+        0.4122091829776764
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 45,
+      "text": "Further, any patents, trademarks, or other intellectual property rights that we have or may obtain may be challenged or circumvented by others or invalidated or held unenforceable through administrative processes, including re-examination, inter partes review, interference and derivation proceedings, and equivalent proceedings in foreign jurisdictions, such as opposition proceedings or litigation. In addition, despite our pending patent applications, there is no assurance that our patent applications will result in issued patents. Even if we continue to seek patent protection in the future, we may be unable to obtain or maintain patent protection for our technology. In addition, any patents issued from pending or future patent applications or licensed to us in the future may not provide us with competitive advantages, or it may be successfully challenged by third parties. Furthermore, legal standards relating to the validity, enforceability, and scope of protection of intellectual property rights are uncertain.",
+      "sentiment": [
+        0.03954971954226494,
+        0.158470019698143,
+        0.801980197429657
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 46,
+      "text": "Despite our precautions, it may be possible for unauthorized third parties to copy our Platform and use information that we regard as proprietary to create products that compete with ours. Patent, trademark, copyright, and trade secret protection may not be available to us in every country in which our products are available. The value of our intellectual property could diminish if others assert rights in or ownership of our trademarks and other intellectual property rights, or trademarks that are similar to our trademarks. We may be unable to successfully resolve these types of conflicts to our satisfaction. In some cases, litigation or other actions may be necessary to protect or enforce our trademarks and other intellectual property rights. In addition, the laws of some foreign countries may not be as protective of intellectual property rights as those in the U. S. , and mechanisms for enforcement of intellectual property rights may be inadequate.",
+      "sentiment": [
+        0.022371945902705193,
+        0.5851538181304932,
+        0.3924742639064789
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 47,
+      "text": "As we expand our global activities, our exposure to unauthorized copying and use of our Platform and proprietary information will likely increase. \u2022any plans we may have to provide or not provide disclosure about certain key metrics, financial guidance, or projections, which may increase the probability that our financial results are perceived as not in line with analysts\u2019 expectations; Natural disasters or other catastrophic events may cause damage or disruption to our operations, international commerce, and the global economy, and thus could harm our business. We have our headquarters and a large employee presence in San Mateo, California, an area which in recent years has been increasingly susceptible to fires, severe weather events, and power outages, any of which could disrupt our operations, and which contains active earthquake zones.",
+      "sentiment": [
+        0.01888108067214489,
+        0.865597128868103,
+        0.11552176624536514
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 48,
+      "text": "In the event of a major earthquake, hurricane, or catastrophic event such as fire, power loss, rolling blackouts or power loss, telecommunications failure, pandemic, geopolitical conflict such as the Russian invasion of Ukraine and Hamas\u2019 attack against Israel and the ensuing war, cyber-attack, war, other physical security threats or terrorist attack, we may be unable to continue our operations and may endure system interruptions, reputational harm, delays in our Platform development, lengthy interruptions in our Platform, breaches of security, and loss of critical data, all of which would harm our business, results of operations, and financial condition. Acts of terrorism and similar events would also cause disruptions to the internet or the economy as a whole. Global climate change could also result in natural disasters occurring more frequently or with more intense effects, which could cause business interruptions.",
+      "sentiment": [
+        0.010082229971885681,
+        0.9215799570083618,
+        0.06833772361278534
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 49,
+      "text": "The long-term effects of the COVID-19 pandemic and recovery from it on society and developer, creator, and user engagement remain uncertain, and a subsequent health crisis or pandemic, as well as the actions taken by various governmental, business and individuals in response, will impact our business, operations and financial results in ways that we may not be able to accurately predict. In addition, the insurance we maintain would likely not be adequate to cover our losses resulting from disasters or other business interruptions. Our disaster recovery plan may not be sufficient to address all aspects of any unanticipated consequence or incident, we may not be able to maintain business continuity at profitable levels or at all, and our insurance may not be sufficient to compensate us for the losses that could occur. In addition to our results determined in accordance with GAAP, we believe the following non-GAAP financial measures are useful in evaluating our performance.",
+      "sentiment": [
+        0.038655634969472885,
+        0.3736812174320221,
+        0.5876631140708923
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 50,
+      "text": "We use this non-GAAP financial information to evaluate our ongoing operations, for internal planning and forecasting purposes, and to evaluate our operating performance. We believe that this non-GAAP financial information may be helpful to investors because it provides consistency and comparability with past financial performance. However, non-GAAP financial measures have limitations in their usefulness to investors because they have no standardized meaning prescribed by GAAP and are not prepared under any comprehensive set of accounting rules or principles. In addition, other companies, including companies in our industry, may calculate similarly titled non-GAAP financial measures differently or may use other measures to evaluate their performance, all of which could reduce the usefulness of our non-GAAP financial information as a tool for comparison.",
+      "sentiment": [
+        0.031579844653606415,
+        0.5367106795310974,
+        0.4317094683647156
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 51,
+      "text": "As a result, our non-GAAP financial information is presented for supplemental informational purposes only and should not be considered in isolation from, or as a substitute for financial information presented in accordance with GAAP. We believe bookings provide a timelier indication of trends in our operating results that are not necessarily reflected in our revenue as a result of the fact that we recognize the majority of revenue over the estimated average lifetime of a paying user. The change in deferred revenue constitutes the vast majority of the reconciling difference from revenue to bookings. By removing these non-cash adjustments, we are able to measure and monitor our business performance based on the timing of actual transactions with our users and the cash that is generated from these transactions. Over the long-term, the factors impacting our revenue and bookings trends are the same. However, in the short-term, there are factors that may cause revenue and bookings trends to differ.",
+      "sentiment": [
+        0.05026784911751747,
+        0.044000010937452316,
+        0.9057321548461914
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 52,
+      "text": "We plan to continue increasing the capacity, capability, and reliability of our infrastructure to support more sophisticated content, more users, and increased engagement. We expect to moderate our investment in infrastructure in fiscal year 2024, but generally expect to increase the dollar amount of our investment in infrastructure for the foreseeable future thereafter as we continue to build out our global infrastructure. We intend to achieve scalability by building and maintaining our own technical infrastructure, while generally generating operating leverage over the long-term. Research and development expenses consist primarily of personnel costs and allocated overhead expenses for our engineering, design, product management, data science, and other employees engaged in maintaining and enhancing the functionality of the Platform. Research and development expenses also include costs associated with our Game Fund program, which funds certain developers up front to develop new experience types for the Platform.",
+      "sentiment": [
+        0.1534290462732315,
+        0.10100138187408447,
+        0.7455695271492004
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 53,
+      "text": "We plan to increase research and development expenses for the foreseeable future primarily driven by increased headcount to develop new features, functionality, and innovation of our product. However, we plan to slow our headcount growth rate and expect to generate operating leverage beginning in fiscal year 2024 and generally through the end of fiscal year 2025. General and administrative expenses consist primarily of personnel costs and allocated overhead for our finance and accounting, legal, human resources, talent acquisition, and other administrative teams. General and administrative expenses also include professional services fees such as outside legal, accounting, audit, and outsourcing services, and other corporate expenses, as well as certain accruals and settlements associated with legal proceedings.",
+      "sentiment": [
+        0.048786867409944534,
+        0.4553210735321045,
+        0.4958919882774353
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 54,
+      "text": "We expect to moderate our headcount growth in fiscal year 2024, but generally expect to increase general and administrative expenses for the foreseeable future thereafter to support the growth of the business. Accordingly, the Company presents Covenant Adjusted EBITDA calculated in accordance with \u201cConsolidated EBITDA\u201d as that term is defined in the Indenture, which is not calculated in accordance with GAAP and may not conform to the calculation of Adjusted EBITDA by other companies. Covenant Adjusted EBITDA should not be considered as a substitute for a measure of our financial performance or other liquidity measures prepared in accordance with GAAP and is also not indicative of income or loss calculated in accordance with GAAP. Management believes that this calculation is useful to investors for purposes of analyzing our compliance with certain covenants specified in the Indenture. Fiscal Year\u2014The Company\u2019s fiscal year ends on December 31.",
+      "sentiment": [
+        0.03262071684002876,
+        0.039865583181381226,
+        0.9275136590003967
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 55,
+      "text": "For example, references to fiscal 2023, 2022, and 2021 refer to the fiscal year ending December 31, 2023, December 31, 2022, and December 31, 2021, respectively. Significant judgment is required to estimate the amount and timing of future cash flows and the relative risk of achieving those cash flows. Assumptions and estimates about future values and remaining useful lives are complex and often subjective. They can be affected by a variety of factors, including external factors such as industry and economic trends, and internal factors such as changes in the Company\u2019s business strategy and internal forecasts. In November 2023, the FASB issued ASU 2023-07, \u201cSegment Reporting (Topic 280): Improvements to Reportable Segment Disclosures,\u201d which requires public entities to disclose expanded information about their reportable segment(s)\u2019 significant expenses and other segment items on an interim and annual basis.",
+      "sentiment": [
+        0.023169200867414474,
+        0.138180211186409,
+        0.838650643825531
+      ],
+      "has_detailed_analysis": false
+    },
+    {
+      "chunk_id": 56,
+      "text": "The ASU is effective for fiscal years beginning after December 15, 2023, and interim periods within fiscal years beginning after December 15, 2024, with early adoption permitted. The ASU is required to be applied retrospectively to all prior periods presented in the financial statements once adopted. The Company is evaluating the disclosure requirements related to the new standard.",
+      "sentiment": [
+        0.027424920350313187,
+        0.020858099684119225,
+        0.9517170190811157
+      ],
+      "has_detailed_analysis": false
+    }
+  ]
+}
